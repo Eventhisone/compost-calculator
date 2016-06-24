@@ -23,10 +23,6 @@ angular.module('compCalc', ['calc'])
   this.boxVol = function total() {
     return compostCalculator.convert( this.leng * this.width * this.height, this.inUnit);
   };
-
-  this.done = function done(){
-    window.alert('Thanks!');
-  };
 }]);
 })(window.angular);
 
