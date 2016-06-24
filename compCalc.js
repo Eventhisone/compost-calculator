@@ -11,8 +11,6 @@ angular.module('compCalc', ['calc'])
   this.rorc = "Radius";
   this.rorcVal = 1;
   this.depth = 1;
-  //this.inUnit = "yards";
-  //this.units = compostCalculator.units;
   this.toRadius = {
     Radius: 1,
     Circumference: 1/4
