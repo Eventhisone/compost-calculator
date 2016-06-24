@@ -8,6 +8,7 @@ angular.module('compCalc', ['calc'])
   this.height = 1;
   this.inUnit = "yards";
   this.units = compostCalculator.units;
+  this.rorcUnits = compostCalculator.units;
   this.rorc = "Radius";
   this.rorcVal = 1;
   this.depth = 1;
