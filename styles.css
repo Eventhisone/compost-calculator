@@ -1,22 +1,24 @@
-li {
-  list-style: none;
-}
 #total {
-  border: 1px solid black;
-  margin-top: 5px;
   padding: 5px 5px 5px 5px;
-  width: 70%;
-  justify-content: center;
+  margin-bottom: 10px;
+  border: 2px solid;
 }
-#inputdiv {
-  color: green;
+#table1, #table2 {
+  border: 4px solid red;
+  margin: 5px 0px 20px 5px;
 }
-#inputdiv2 {
-  color: blue;
+table#table1 tr:nth-child(even) {
+    background-color: #eee;
 }
-#rectspan{
-  background-color: yellow;
+table#table1 tr:nth-child(odd) {
+   background-color:#fff;
 }
-#circspan{
-  background-color: yellow;
+table#table2 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#table2 tr:nth-child(odd) {
+   background-color:#fff;
+}
+#table3 {
+  padding: 5px;
 }
