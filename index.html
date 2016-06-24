@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -55,3 +56,111 @@
   
   </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-guide-concepts-21-production</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="calc.js"></script>
+  <script src="ocalc.js"></script>
+  <script src="compCalc.js"></script>
+  <script src="circCalc.js"></script>
+  
+
+  
+</head>
+<body >
+  <!-- Template -->
+<div ng-app="compCalc" ng-controller="CalcController as compCalc">
+  <span id="rectspan">
+  <b>Rectangular Box:</b>
+  <ul>
+    <li>
+      <div id="inputdiv">
+        Length: <input type="number" min="0" id="input" ng-model="compCalc.leng" required >
+      </div>
+    </li>
+    <li>
+      <div id="inputdiv">
+        Width: <input type="number" min="0" id="input" ng-model="compCalc.width" required >
+      </div>
+    </li>
+    <li>
+      <div id="inputdiv">
+        Height: <input type="number" min="0" id="input" ng-model="compCalc.height" required >
+      </div>
+      </li>
+      <li>
+      <div id="inputdiv">
+        Units:
+        <select ng-model="compCalc.inUnit">
+          <option ng-repeat="unit in compCalc.units">{{ unit }}</option>
+        </select>
+      </div>
+      </li>
+      <div id="total">
+        <b>The volume of compost you need is:</b>
+        <span>
+          {{ compCalc.boxVol() }}
+        </span>
+        <b>yards<sup>3</sup></b>
+      </div>
+  </ul>
+</span>
+<span id="circspan">  
+<b>Round Box:</b>
+  <ul>
+    <li>
+      <div id="inputdiv2">
+        <select ng-model="compCalc.rorc">
+          <option>Radius</option>
+          <option>Circumference</option>
+        </select>
+        <input type="number" min="0" id="input" ng-model="compCalc.rorcVal" required >
+      </div>
+    </li>
+    <li>
+      <div id="inputdiv2">
+        Depth: <input type="number" min="0" id="input" ng-model="compCalc.depth" required >
+      </div>
+    </li>
+    <li>
+      <div id="inputdiv2">
+        Units:
+        <select ng-model="compCalc.inUnit">
+          <option ng-repeat="unit in compCalc.units">{{ unit }}</option>
+        </select>
+      </div>
+      </li>
+      <div id="total">
+        <b>The volume of compost you need is:</b>
+        <span>
+          {{ compCalc.circVol() }}
+        </span>
+        <b>yards<sup>3</sup></b>
+      </div>
+  </ul>
+  </span>
+</div>
+<table>
+  <tr>
+    <td><img src="box.svg" width="60%"><h3>Rectangular Box</h3></td>
+    <td><img src="circ.svg" width="70%"><h3>Round Box</h3></td>
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
+>>>>>>> refs/remotes/origin/master

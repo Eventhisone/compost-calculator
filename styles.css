@@ -1,0 +1,22 @@
+li {
+  list-style: none;
+}
+#total {
+  border: 1px solid black;
+  margin-top: 5px;
+  padding: 5px 5px 5px 5px;
+  width: 70%;
+  justify-content: center;
+}
+#inputdiv {
+  color: green;
+}
+#inputdiv2 {
+  color: blue;
+}
+#rectspan{
+  background-color: yellow;
+}
+#circspan{
+  background-color: yellow;
+}
